@@ -1,0 +1,12 @@
+# Site settings
+title: Relco Locomotives
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "relcolocomotives.com" # the base hostname & protocol for your site
+footertext: "1001 Warrenville Rd. Lisle, IL 60532     630-968-0670     M1003 Certified"
+
+# Build settings
+markdown: kramdown
+source: ./src/
+destination: ./site/
+
+exclude: /scripts/*-expanded.js

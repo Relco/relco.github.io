@@ -1,0 +1,62 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+  <script type = "text/javascript" src="/scripts/libraries/jquery-1.11.3.min.js"></script>
+  <script type = "text/javascript" src="/scripts/libraries/jssor.slider.mini.js"></script>
+
+  <script>
+    jQuery(document).ready(function ($) {
+
+      var CaptionTransitions = [];
+      CaptionTransitions["L"] = {$Duration:900,x:0.6,$Easing:{$Left:$JssorEasing$.$EaseInOutSine},$Opacity:2};
+      CaptionTransitions["R"] = { $Duration: 800, x: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+      CaptionTransitions["T"] = {$Duration:900,y:0.6,$Easing:{$Top:$JssorEasing$.$EaseInOutSine},$Opacity:2};
+      CaptionTransitions["B"] = { $Duration: 800, y: -0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+      CaptionTransitions["TL"] = { $Duration: 800, x: 0.6, y: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+      CaptionTransitions["TR"] = { $Duration: 800, x: -0.6, y: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+      CaptionTransitions["BL"] = { $Duration: 800, x: 0.6, y: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+      CaptionTransitions["BR"] = { $Duration: 800, x: -0.6, y: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+
+      CaptionTransitions["MCLIP|T"] = {$Duration:900,$Clip:4,$Move:true,$Easing:{$Clip:$JssorEasing$.$EaseInOutCubic}};
+
+      var _SlideshowTransitions = [
+        //Fade
+      { $Duration: 1200, $Opacity: 2 }
+      ];
+
+      var options = {
+          $SlideDuration: 500,
+          $AutoPlay: true,
+          $AutoPlayInterval: 1500,
+          $CaptionSliderOptions: {
+              $Class: $JssorCaptionSlider$,
+              $CaptionTransitions: CaptionTransitions,
+          },
+          $SlideshowOptions: {
+              $Class: $JssorSlideshowRunner$,
+              $Transitions: _SlideshowTransitions,
+              $TransitionsOrder: 1
+          }
+      };
+
+
+
+      var jssor_slider1 = new $JssorSlider$('slideshow', options);
+    });
+  </script>
+
+  {% if page.js %}
+    <script type="text/javascript" src="/scripts/{{ page.js }}" defer></script>
+  {% endif %}
+
+
+</head>

@@ -1,0 +1,37 @@
+<div id="slideshow-wrapper">
+  <div id = "slideshow">
+
+    <!-- Slides Container -->
+    <div u="slides" id="slides" style="width: 900px; height: 300px;">
+      {% for page in site.pages %}
+        {% if page.layout == 'picture' and page.picture %}
+        <!--Slide-->
+        <div class = "slide">
+
+          <div>
+            <img u="image" src="/images/{{page.picture}}" />
+          </div>
+
+
+          {% if page.content %}
+
+            {% if page.transition %}
+              <div class = "caption" u="caption" t="{{page.transition}}">
+                {{page.content}}
+              </div>
+            {% else %}
+              <div class = "caption" u="caption" t="MCLIP|T">
+                {{page.content}}
+              </div>
+            {% endif %}
+
+
+          {%endif%}
+
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
