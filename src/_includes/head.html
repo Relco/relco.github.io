@@ -37,6 +37,7 @@
           $SlideDuration: 500,
           $AutoPlay: true,
           $AutoPlayInterval: 1500,
+          $FillMode: 4,
           $CaptionSliderOptions: {
               $Class: $JssorCaptionSlider$,
               $CaptionTransitions: CaptionTransitions,
@@ -48,9 +49,26 @@
           }
       };
 
-
-
       var jssor_slider1 = new $JssorSlider$('slideshow', options);
+
+        function ScaleSlider() {
+            var parentWidth = $('#slideshow-wrapper').parent().width();
+            var maxWidth = 970;
+            if (parentWidth) {
+
+                jssor_slider1.$ScaleWidth(parentWidth > maxWidth ? maxWidth : parentWidth);
+            }
+            else
+                window.setTimeout(ScaleSlider, 30);
+        }
+        //Scale slider after document ready
+        ScaleSlider();
+
+        //Scale slider while window load/resize/orientationchange.
+        $(window).bind("load", ScaleSlider);
+        $(window).bind("resize", ScaleSlider);
+        $(window).bind("orientationchange", ScaleSlider);
+        //responsive code end
     });
   </script>
 

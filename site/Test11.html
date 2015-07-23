@@ -40,6 +40,7 @@
           $SlideDuration: 500,
           $AutoPlay: true,
           $AutoPlayInterval: 1500,
+          $FillMode: 4,
           $CaptionSliderOptions: {
               $Class: $JssorCaptionSlider$,
               $CaptionTransitions: CaptionTransitions,
@@ -51,9 +52,26 @@
           }
       };
 
-
-
       var jssor_slider1 = new $JssorSlider$('slideshow', options);
+
+        function ScaleSlider() {
+            var parentWidth = $('#slideshow-wrapper').parent().width();
+            var maxWidth = 970;
+            if (parentWidth) {
+
+                jssor_slider1.$ScaleWidth(parentWidth > maxWidth ? maxWidth : parentWidth);
+            }
+            else
+                window.setTimeout(ScaleSlider, 30);
+        }
+        //Scale slider after document ready
+        ScaleSlider();
+
+        //Scale slider while window load/resize/orientationchange.
+        $(window).bind("load", ScaleSlider);
+        $(window).bind("resize", ScaleSlider);
+        $(window).bind("orientationchange", ScaleSlider);
+        //responsive code end
     });
   </script>
 
@@ -71,7 +89,7 @@
 
     <!--<img src="/images/Header.png"/>-->
 
-    <img src="/images/Logo.jpg" style="display:block; margin-left:auto; margin-right: auto; margin-bottom:50px; margin-top:50px;"/>
+    <img src="/images/Logo.jpg" id="logo"/>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -126,7 +144,7 @@
   <div id = "slideshow">
 
     <!-- Slides Container -->
-    <div u="slides" id="slides" style="width: 900px; height: 300px;">
+    <div u="slides" class="slides">
       
         
       
@@ -220,6 +238,22 @@
 </div>
 
 
+    <div class="wrapper">
+
+  <nav class="page-nav">
+    <div class="menubar-wrapper">
+      
+    </div>
+    <div class = "menubar-mobile">
+      <ul>
+        
+      </ul>
+    </div>
+  </nav>
+
+</div>
+
+
     <div class="page-content">
       <div class="wrapper">
         <div class="post">
@@ -242,10 +276,10 @@
 
   <div class="wrapper">
 
-    
+    <p>&copy; Relco Locomotives 2015</p>
 
 
-    </div>
+
 
   </div>
 

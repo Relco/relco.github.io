@@ -2,6 +2,12 @@
 layout: page
 render: true
 title: Specialty Locomotives
+links:
+  - 4
+  - 3
+  - Specialty Locomotives
+  - Manufacturing
+
 ---
 At RELCO, not only do we produce switcher, GP, and SD locomotives, we also manufacture specialty locomotives and vehicles for your unique needs.  
 

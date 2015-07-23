@@ -196,96 +196,16 @@ pre {
   display: block;
   font-size: 24px; }
 
-.site-nav .menu-icon {
-  display: none; }
-.site-nav .page-link {
-  color: #111;
-  line-height: 1.5; }
-  .site-nav .page-link:not(:first-child) {
-    margin-left: 20px; }
-@media screen and (max-width: 600px) {
-  .site-nav {
-    position: absolute;
-    top: 9px;
-    right: 30px;
-    background-color: #fdfdfd;
-    border: 1px solid #e8e8e8;
-    border-radius: 5px;
-    text-align: right; }
-    .site-nav .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center; }
-      .site-nav .menu-icon > svg {
-        width: 18px;
-        height: 15px; }
-        .site-nav .menu-icon > svg path {
-          fill: #424242; }
-    .site-nav .menubar-wrapper {
-      clear: both;
-      display: none; }
-    .site-nav:hover .menubar-wrapper {
-      display: block;
-      padding-bottom: 5px; }
-    .site-nav .menubar {
-      display: block;
-      padding: 5px 10px; } }
-@media screen and (min-width: 600px) {
-  .site-nav .menubar {
-    float: left;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
-    background: transparent;
-    border-bottom: 1px solid clear;
-    transition: border-color 0.5s, background-color 0.5s; }
-    .site-nav .menubar:first-child {
-      border-left: 0px;
-      margin-left: 20px; }
-    .site-nav .menubar:last-child {
-      border-right: 0px; }
-  .site-nav .menubar:link {
-    text-decoration: none; }
-  .site-nav .menubar:hover {
-    background: rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    border-bottom: 1px solid grey; } }
-
-#slideshow-wrapper {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e8e8e8; }
-
-#slideshow {
-  position: relative;
-  width: 900px;
-  height: 300px;
-  margin: 0px auto; }
-
-#slides {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  overflow: hidden; }
-
-.caption {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: White;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 50px;
-  text-align: center; }
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 50px; }
+  @media screen and (max-width: 600px) {
+    #logo {
+      width: 100px;
+      height: 100px; } }
 
 /**
  * Syntax highlighting styles
@@ -425,3 +345,137 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+#slideshow-wrapper {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e8e8e8; }
+  #slideshow-wrapper #slideshow {
+    position: relative;
+    width: 900px;
+    height: 300px;
+    margin: 0px auto; }
+  #slideshow-wrapper .slides {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    width: 900px;
+    height: 300px; }
+  #slideshow-wrapper .caption {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: White;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center; }
+
+.page-nav .menubar-mobile {
+  display: none; }
+.page-nav .page-link {
+  color: #111;
+  line-height: 1.5; }
+  .page-nav .page-link:not(:first-child) {
+    margin-left: 20px; }
+@media screen and (max-width: 600px) {
+  .page-nav {
+    background-color: #fdfdfd;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px; }
+    .page-nav .menubar-wrapper {
+      clear: both;
+      display: none; }
+    .page-nav .menubar-mobile {
+      display: block; }
+    .page-nav .menubar {
+      display: block;
+      padding: 5px 10px;
+      color: black;
+      transition: background-color 0.5s; }
+    .page-nav .menubar:hover {
+      background: rgba(0, 0, 0, 0.2);
+      text-decoration: none; } }
+@media screen and (min-width: 600px) {
+  .page-nav .menubar {
+    float: left;
+    color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px solid grey;
+    background: transparent;
+    border-bottom: 1px solid clear;
+    transition: background-color 0.5s; }
+    .page-nav .menubar:first-child {
+      border-left: 0px;
+      margin-left: 20px; }
+    .page-nav .menubar:last-child {
+      border-right: 0px; }
+  .page-nav .menubar:link {
+    text-decoration: none; }
+  .page-nav .menubar:hover {
+    background: rgba(0, 0, 0, 0.2);
+    text-decoration: none; } }
+
+.site-nav .menu-icon {
+  display: none; }
+.site-nav .page-link {
+  color: #111;
+  line-height: 1.5; }
+  .site-nav .page-link:not(:first-child) {
+    margin-left: 20px; }
+@media screen and (max-width: 600px) {
+  .site-nav {
+    position: absolute;
+    top: 9px;
+    right: 30px;
+    background-color: #fdfdfd;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    text-align: right; }
+    .site-nav .menu-icon {
+      display: block;
+      float: right;
+      width: 50px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center; }
+      .site-nav .menu-icon > svg {
+        width: 18px;
+        height: 15px; }
+        .site-nav .menu-icon > svg path {
+          fill: #424242; }
+    .site-nav .menubar-wrapper {
+      clear: both;
+      display: none; }
+    .site-nav:hover .menubar-wrapper {
+      display: block;
+      padding-bottom: 5px; }
+    .site-nav .menubar {
+      display: block;
+      padding: 5px 10px; } }
+@media screen and (min-width: 600px) {
+  .site-nav .menubar {
+    float: left;
+    color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px solid grey;
+    background: transparent;
+    border-bottom: 1px solid clear;
+    transition: border-color 0.5s, background-color 0.5s; }
+    .site-nav .menubar:first-child {
+      border-left: 0px;
+      margin-left: 20px; }
+    .site-nav .menubar:last-child {
+      border-right: 0px; }
+  .site-nav .menubar:link {
+    text-decoration: none; }
+  .site-nav .menubar:hover {
+    background: rgba(0, 0, 0, 0.2);
+    text-decoration: none; } }

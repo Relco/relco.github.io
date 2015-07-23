@@ -1,0 +1,26 @@
+<div class="wrapper">
+
+  <nav class="page-nav">
+    <div class="menubar-wrapper">
+      {% for item in page.links %}
+        {% for page in site.pages %}
+          {% if page.title and page.title == item %}
+            <a class="menubar" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+    <div class = "menubar-mobile">
+      <ul>
+        {% for item in page.links %}
+          {% for page in site.pages %}
+            {% if page.title and page.title == item %}
+              <li><a class="menubar" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+
+</div>
