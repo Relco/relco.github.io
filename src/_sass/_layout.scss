@@ -68,7 +68,7 @@
   margin-bottom:50px;
   margin-top:50px;
 
-  @include media-query($on-palm) {
+  @include media-query($on-phone) {
     width: 100px;
     height: 100px;
   }

@@ -7,10 +7,12 @@
   #slideshow{
      position: relative;
 
-     width: 900px;
-     height: 300px;
+     width: $slideshow-width;
+     //height: $slideshow-height;
 
      margin: 0px auto;
+
+     background-color: $grey-color-light;
   }
 
   .slides{
@@ -19,9 +21,20 @@
      top: 0px;
      overflow: hidden;
 
-     width: 900px;
-     height: 300px;
+     width: $slideshow-width;
+     //height: $slideshow-height;
 
+
+  }
+
+  .slide{
+    width: $slideshow-width;
+    //height: $slideshow-height;
+
+    img{
+      display:block;
+      margin:auto;
+    }
 
   }
 

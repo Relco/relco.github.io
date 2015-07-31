@@ -1,6 +1,5 @@
 ---
 layout: picture
-picture: example3.jpg
+picture: slideshow3.jpg
 transition: L
 ---
-Headfas

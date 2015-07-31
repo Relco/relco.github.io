@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Component Sales</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="relcolocomotives.com/component/">
+  <link rel="alternate" type="application/rss+xml" title="Relco Locomotives" href="relcolocomotives.com/feed.xml" />
+
+  <script type = "text/javascript" src="/scripts/libraries/jquery-1.11.3.min.js"></script>
+  <script type = "text/javascript" src="/scripts/libraries/jssor.slider.mini.js"></script>
+
+  <script>
+    jQuery(document).ready(function ($) {
+
+      var CaptionTransitions = [];
+      CaptionTransitions["L"] = {$Duration:900,x:0.6,$Easing:{$Left:$JssorEasing$.$EaseInOutSine},$Opacity:2};
+      CaptionTransitions["R"] = { $Duration: 800, x: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+      CaptionTransitions["T"] = {$Duration:900,y:0.6,$Easing:{$Top:$JssorEasing$.$EaseInOutSine},$Opacity:2};
+      CaptionTransitions["B"] = { $Duration: 800, y: -0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+      CaptionTransitions["TL"] = { $Duration: 800, x: 0.6, y: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+      CaptionTransitions["TR"] = { $Duration: 800, x: -0.6, y: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+      CaptionTransitions["BL"] = { $Duration: 800, x: 0.6, y: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+      CaptionTransitions["BR"] = { $Duration: 800, x: -0.6, y: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+
+      CaptionTransitions["MCLIP|T"] = {$Duration:900,$Clip:4,$Move:true,$Easing:{$Clip:$JssorEasing$.$EaseInOutCubic}};
+
+      var _SlideshowTransitions = [
+            //Fade Twins
+            { $Duration: 700, $Opacity: 2, $Brother: { $Duration: 1000, $Opacity: 2 } }
+            ];
+
+      var options = {
+          $SlideDuration: 500,
+          $AutoPlay: true,
+          //$AutoPlayInterval: 1500,
+          $FillMode: 4,
+          $CaptionSliderOptions: {
+              $Class: $JssorCaptionSlider$,
+              $CaptionTransitions: CaptionTransitions,
+          },
+          $SlideshowOptions: {
+              $Class: $JssorSlideshowRunner$,
+              $Transitions: _SlideshowTransitions,
+              $TransitionsOrder: 1
+          }
+      };
+
+      var jssor_slider1 = new $JssorSlider$('slideshow', options);
+
+        function ScaleSlider() {
+            var parentWidth = $('#slideshow-wrapper').parent().width();
+            var maxWidth = 970;
+            if (parentWidth) {
+
+                jssor_slider1.$ScaleWidth(parentWidth > maxWidth ? maxWidth : parentWidth);
+            }
+            else
+                window.setTimeout(ScaleSlider, 30);
+        }
+        //Scale slider after document ready
+        ScaleSlider();
+
+        //Scale slider while window load/resize/orientationchange.
+        $(window).bind("load", ScaleSlider);
+        $(window).bind("resize", ScaleSlider);
+        $(window).bind("orientationchange", ScaleSlider);
+        //responsive code end
+    });
+  </script>
+
+  
+
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <!--<img src="/images/Header.png"/>-->
+
+    <img src="/images/Logo.jpg" id="logo"/>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="menubar-wrapper">
+        
+          
+          <a class="menubar" href="/about/">About</a>
+          
+        
+          
+          <a class="menubar" href="/component/">Component Sales</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="menubar" href="/Manufacturing/">Manufacturing</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="menubar" href="/Services/">Product and Services</a>
+          
+        
+          
+          <a class="menubar" href="/Specialty/">Specialty Locomotives</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div id="slideshow-wrapper">
+
+  <div id = "slideshow"  style="height: 300px;" >
+
+    <!-- Slides Container -->
+    <div u="slides" class="slides"  style="height: 300px;" >
+
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <!--Slide-->
+          <div class="slide"  style="height: 300px;" >
+
+            <div>
+              <img u="image" src="/images/slideshow/slideshow.jpg" />
+            </div>
+
+
+            
+
+          </div>
+          
+        
+          
+          <!--Slide-->
+          <div class="slide"  style="height: 300px;" >
+
+            <div>
+              <img u="image" src="/images/slideshow/slideshow2.jpg" />
+            </div>
+
+
+            
+
+          </div>
+          
+        
+          
+          <!--Slide-->
+          <div class="slide"  style="height: 300px;" >
+
+            <div>
+              <img u="image" src="/images/slideshow/slideshow3.jpg" />
+            </div>
+
+
+            
+
+          </div>
+          
+        
+          
+          <!--Slide-->
+          <div class="slide"  style="height: 300px;" >
+
+            <div>
+              <img u="image" src="/images/slideshow/slideshow4.jpg" />
+            </div>
+
+
+            
+
+          </div>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+
+
+
+    </div>
+
+  </div>
+</div>
+
+
+    <div class="wrapper">
+
+  <nav class="page-nav">
+    <div class="menubar-wrapper">
+      
+    </div>
+    <div class = "menubar-mobile">
+      <ul>
+        
+      </ul>
+    </div>
+  </nav>
+
+</div>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Component Sales</h1>
+  </header>
+
+  <article class="post-content">
+    <p>When considering your component needs, RELCO offers the same commitment to high standards that we are known for throughout our business. Being a manufacturer of locomotives, we often can have the component you are looking for in our warehouse, from cores to RTO’s to rebuilt components. We remanufacture all locomotive components in-house, using the most current technologies in tooling and testing, in accordance with the strictest quality assurance standards.</p>
+
+<p>Our components are available as an outright purchase, unit exchange, or repair-and-return basis and are often ready for immediate delivery to you. And each remanufactured component comes with a full warranty against defects in materials and workmanship. Our quality assurance adheres to the strict requirements of the AAR quality assurance standard M-1003.</p>
+
+<p>Below are some of the Component and Rebuilding Services we offer:</p>
+
+<ul>
+  <li>Main Generators</li>
+  <li>Traction Motor Combos</li>
+  <li>Air Compressor</li>
+  <li>Power Assemblies</li>
+  <li>Roots Blowers</li>
+  <li>Wheel and Axle Sets</li>
+  <li>Trucks - disassembled complete to the bare frame and completely rebuilt, machining and repairing wear surfaces, replace worn bushings and pins, tramming the frame for trueness.</li>
+  <li>Engines - complete inspection, cleaning to bare metal, conduct non-destructive testing of welds and high stress areas, confirm block and pan dimensions and document.   Make necessary repairs to; cylinder head pots, test cock tubes, A-frames, bearing surfaces, end sheets, top deck areas, exhaust port areas, mounting pads, crankcase windows, and all thread holes.  Upgrade to latest “tier” compliant levels.</li>
+</ul>
+
+<h1 id="special-items-for-sale">Special Items for Sale</h1>
+<p class="center">We always have a vast inventory of parts for sale and some of them are listed below.<br />
+There will be items we have that are not listed, please call us at 630-968-0670 and we will search for those items.  </p>
+
+<table class="center-margin" width="500px">
+  <tbody>
+    <tr>
+      <td>Air Compressor, WBG</td>
+      <td>Fire Extinguishers, empty</td>
+    </tr>
+    <tr>
+      <td>Air horns</td>
+      <td>Fuel Injectors</td>
+    </tr>
+    <tr>
+      <td>Air tanks</td>
+      <td>Fuel tanks</td>
+    </tr>
+    <tr>
+      <td>Bells, steel</td>
+      <td>Gear Cases</td>
+    </tr>
+    <tr>
+      <td>Bus Bar</td>
+      <td>GG Roller Bearing Box Adapter</td>
+    </tr>
+    <tr>
+      <td>Contactor</td>
+      <td>Governors</td>
+    </tr>
+    <tr>
+      <td>Controller</td>
+      <td>Jumper Trailline, MU 27 pin 9ft</td>
+    </tr>
+    <tr>
+      <td>Coupler</td>
+      <td>Manifolds</td>
+    </tr>
+    <tr>
+      <td>Dynamic Brake Grid</td>
+      <td>Micro Positioner Relay</td>
+    </tr>
+    <tr>
+      <td>Electrical Cabinets</td>
+      <td>Relay, Electro Magnetic</td>
+    </tr>
+    <tr>
+      <td>Engine Doors</td>
+      <td>Springs</td>
+    </tr>
+    <tr>
+      <td>Equipment stands</td>
+      <td>Vector Covers</td>
+    </tr>
+    <tr>
+      <td>Fans, 48” Fans for Dynamic Brakes</td>
+      <td>VR14 Board</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="center-margin" width="500px">
+  <tbody>
+    <tr>
+      <td>8004587—Resistor, battery charger</td>
+      <td>8363168—Relay - 2 Pole, 10 A, Form C</td>
+    </tr>
+    <tr>
+      <td>8100297—Spring Hanger Key</td>
+      <td>8365499—Air Timer, 880</td>
+    </tr>
+    <tr>
+      <td>8102142—Spring Hanger</td>
+      <td>8383122—77017790—Relay, Ground, GR, 2NO-2NC</td>
+    </tr>
+    <tr>
+      <td>8158951—Rectifier, 5 Plate - 4 X 6 Square – Cr-15 Y CR17</td>
+      <td>8392855—Relay, General Purpose, 2NO-2NC</td>
+    </tr>
+    <tr>
+      <td>8172591—77016358—Relay, Wheel Slip, WS, 150A, P/U, 1NO</td>
+      <td>8403349—Rectifier CR-26</td>
+    </tr>
+    <tr>
+      <td>8190872—Relay, General Purpose, COR, 3NO-3NC</td>
+      <td>8416095—Rectifier Assembly, Panel, vertical mount</td>
+    </tr>
+    <tr>
+      <td>8195548—Cable, jumper, power plant control, 27 Pin MU, 108”</td>
+      <td>8451653—SCR Panel Rectifier</td>
+    </tr>
+    <tr>
+      <td>8202913—Resistor Assembly, Shunt field</td>
+      <td>8453174—77013381—Magnetic Switch Assembly, Reverser</td>
+    </tr>
+    <tr>
+      <td>8237095—Resistor, RE-19 A Y B 20K-10K</td>
+      <td>8454412—Relay, Electromechanical, 2400V Contacts</td>
+    </tr>
+    <tr>
+      <td>8243533—Switch - Rotary Snap</td>
+      <td>8461331—Contactor, Magnetic Power 100A, SPST</td>
+    </tr>
+    <tr>
+      <td>8288717—Resistor, 14 Ohm</td>
+      <td>8461332—77015411—Contactor, magnetic power, 1000A, SPST</td>
+    </tr>
+    <tr>
+      <td>8304193—1045000—Dynamic Brake Resistor w/o Center Tap</td>
+      <td>8464117—77013917 Magnetic Power Reverser</td>
+    </tr>
+    <tr>
+      <td>8330790—Regulator, Automatic, Voltage</td>
+      <td>9093629—Controller, Mechanical Assembly, Dynamic</td>
+    </tr>
+    <tr>
+      <td>8333315—Bus bar, 1000V</td>
+      <td>9315518—Contactor Assembly, St—2000 Amp</td>
+    </tr>
+    <tr>
+      <td>8333316—Bus bar</td>
+      <td>9319866—Backdoor, Module Asm RC-12</td>
+    </tr>
+    <tr>
+      <td>8347433—Relay-Fwd Trans. Aux. Relay</td>
+      <td>9320130—Differential pressure—Turbocharged engines</td>
+    </tr>
+    <tr>
+      <td>8357415—Relay, Gen. Purpose - Crl, Fpc,</td>
+      <td>9505867—Differential pressure—Roots blown engines</td>
+    </tr>
+    <tr>
+      <td>8357416—Relay - 6 Pole, 10 A (4 N.O. - 2 N.C.)</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <p style="text-align:center">1001 Warrenville Rd.   Lisle, IL 60532       630-968-0670      M1003 Certified</p>
+    <p style="text-align:center">&copy; Relco Locomotives 2015 </p>
+
+    <a href="/jobs/"> <p style="text-align:center">Job Opportunities</p> </a>
+
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

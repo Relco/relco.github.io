@@ -1,6 +1,5 @@
 ---
 layout: picture
-picture: example2.jpg
+picture: slideshow2.jpg
 transition: L
 ---
-CAPTION AAAAH

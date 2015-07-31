@@ -32,14 +32,14 @@
       CaptionTransitions["MCLIP|T"] = {$Duration:900,$Clip:4,$Move:true,$Easing:{$Clip:$JssorEasing$.$EaseInOutCubic}};
 
       var _SlideshowTransitions = [
-        //Fade
-      { $Duration: 1200, $Opacity: 2 }
-      ];
+            //Fade Twins
+            { $Duration: 700, $Opacity: 2, $Brother: { $Duration: 1000, $Opacity: 2 } }
+            ];
 
       var options = {
           $SlideDuration: 500,
           $AutoPlay: true,
-          $AutoPlayInterval: 1500,
+          //$AutoPlayInterval: 1500,
           $FillMode: 4,
           $CaptionSliderOptions: {
               $Class: $JssorCaptionSlider$,
@@ -103,7 +103,23 @@
       <div class="menubar-wrapper">
         
           
-          <a class="menubar" href="/Example.html">4</a>
+          <a class="menubar" href="/about/">About</a>
+          
+        
+          
+          <a class="menubar" href="/component/">Component Sales</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
           
         
           
@@ -111,15 +127,29 @@
           
         
           
-          <a class="menubar" href="/SpecialtyLocomotives.html">Specialty Locomotives</a>
+        
           
         
           
-          <a class="menubar" href="/Test11.html">3</a>
+        
+          
+          <a class="menubar" href="/Services/">Product and Services</a>
           
         
           
-          <a class="menubar" href="/XD.html">XD Locomotive</a>
+          <a class="menubar" href="/Specialty/">Specialty Locomotives</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
           
         
           
@@ -141,97 +171,149 @@
 
 
     <div id="slideshow-wrapper">
-  <div id = "slideshow">
+
+  <div id = "slideshow"  style="height: 300px;" >
 
     <!-- Slides Container -->
-    <div u="slides" class="slides">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-        <!--Slide-->
-        <div class = "slide">
+    <div u="slides" class="slides"  style="height: 300px;" >
 
-          <div>
-            <img u="image" src="/images/example.jpg" />
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <!--Slide-->
+          <div class="slide"  style="height: 300px;" >
+
+            <div>
+              <img u="image" src="/images/slideshow/slideshow.jpg" />
+            </div>
+
+
+            
+
+              
+                <div class = "caption" u="caption" t="MCLIP|T">
+                  
+
+                </div>
+              
+
+
+            
+
           </div>
-
-
           
+        
+          
+          <!--Slide-->
+          <div class="slide"  style="height: 300px;" >
+
+            <div>
+              <img u="image" src="/images/slideshow/slideshow2.jpg" />
+            </div>
+
 
             
-              <div class = "caption" u="caption" t="MCLIP|T">
-                <p>This is a large caption. This should fade in and out really nicely. Try not to make it too long, keep it one line please. It tends to look bad with a lot of content.</p>
 
-              </div>
+              
+                <div class = "caption" u="caption" t="L">
+                  
+
+                </div>
+              
+
+
             
 
-
-          
-
-        </div>
-        
-      
-        
-        <!--Slide-->
-        <div class = "slide">
-
-          <div>
-            <img u="image" src="/images/example2.jpg" />
           </div>
-
-
           
+        
+          
+          <!--Slide-->
+          <div class="slide"  style="height: 300px;" >
+
+            <div>
+              <img u="image" src="/images/slideshow/slideshow3.jpg" />
+            </div>
+
 
             
-              <div class = "caption" u="caption" t="L">
-                <p>CAPTION AAAAH</p>
 
-              </div>
+              
+                <div class = "caption" u="caption" t="L">
+                  
+
+                </div>
+              
+
+
             
 
-
-          
-
-        </div>
-        
-      
-        
-        <!--Slide-->
-        <div class = "slide">
-
-          <div>
-            <img u="image" src="/images/example3.jpg" />
           </div>
-
-
           
+        
+          
+          <!--Slide-->
+          <div class="slide"  style="height: 300px;" >
+
+            <div>
+              <img u="image" src="/images/slideshow/slideshow4.jpg" />
+            </div>
+
 
             
-              <div class = "caption" u="caption" t="L">
-                <p>Headfas</p>
 
-              </div>
-            
-
-
+          </div>
           
+        
+          
+        
+          
+        
+          
+        
+      
 
-        </div>
-        
-      
-        
-      
-        
-      
+
+
+
     </div>
 
   </div>
@@ -258,10 +340,10 @@
       <div class="wrapper">
         <div class="picture">
 
-  <img src="/images/example3.jpg"/>
+  <img src="/images/slideshow3.jpg"/>
 
   <article class="post-content">
-    <p>Headfas</p>
+    
 
   </article>
 
@@ -274,9 +356,10 @@
 
   <div class="wrapper">
 
-    <p>&copy; Relco Locomotives 2015</p>
+    <p style="text-align:center">1001 Warrenville Rd.   Lisle, IL 60532       630-968-0670      M1003 Certified</p>
+    <p style="text-align:center">&copy; Relco Locomotives 2015 </p>
 
-
+    <a href="/jobs/"> <p style="text-align:center">Job Opportunities</p> </a>
 
 
   </div>

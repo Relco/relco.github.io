@@ -1,36 +1,73 @@
 <div id="slideshow-wrapper">
-  <div id = "slideshow">
+
+  <div id = "slideshow" {% if page.slide-height %} style="height: {{page.slide-height}}px;" {% else %} style="height: 300px;" {% endif %}>
 
     <!-- Slides Container -->
-    <div u="slides" class="slides">
-      {% for page in site.pages %}
-        {% if page.layout == 'picture' and page.picture %}
-        <!--Slide-->
-        <div class = "slide">
+    <div u="slides" class="slides" {% if page.slide-height %} style="height: {{page.slide-height}}px;" {% else %} style="height: 300px;" {% endif %}>
 
-          <div>
-            <img u="image" src="/images/{{page.picture}}" />
+      {% if page.slideshow %}
+        {% for item in page.slideshow %}
+          <!--Slide-->
+          <div class="slide" {% if page.slide-height %} style="height: {{page.slide-height}}px;" {% else %} style="height: 300px;" {% endif %}>
+
+            <div>
+              <img u="image" src="/images/slideshow/{{item.picture}}" />
+            </div>
+
+
+            {% if item.caption %}
+
+              {% if item.transition %}
+                <div class = "caption" u="caption" t="{{item.transition}}">
+                  {{item.caption}}
+                </div>
+              {% else %}
+                <div class = "caption" u="caption" t="MCLIP|T">
+                  {{item.caption}}
+                </div>
+              {% endif %}
+
+            {%endif%}
+
           </div>
+        {% endfor %}
+
+      {% endif %}
+
+      {% if page.override == null or page.override == false %}
+        {% for page in site.pages %}
+          {% if page.layout == 'picture' and page.picture %}
+          <!--Slide-->
+          <div class="slide" {% if page.slide-height %} style="height: {{page.slide-height}}px;" {% else %} style="height: 300px;" {% endif %}>
+
+            <div>
+              <img u="image" src="/images/slideshow/{{page.picture}}" />
+            </div>
 
 
-          {% if page.content %}
+            {% if page.content != '' %}
 
-            {% if page.transition %}
-              <div class = "caption" u="caption" t="{{page.transition}}">
-                {{page.content}}
-              </div>
-            {% else %}
-              <div class = "caption" u="caption" t="MCLIP|T">
-                {{page.content}}
-              </div>
-            {% endif %}
+              {% if page.transition %}
+                <div class = "caption" u="caption" t="{{page.transition}}">
+                  {{page.content}}
+                </div>
+              {% else %}
+                <div class = "caption" u="caption" t="MCLIP|T">
+                  {{page.content}}
+                </div>
+              {% endif %}
 
 
-          {%endif%}
+            {%endif%}
 
-        </div>
-        {% endif %}
-      {% endfor %}
+          </div>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+
+
+
     </div>
 
   </div>
