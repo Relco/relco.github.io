@@ -62,11 +62,16 @@
 }
 
 #logo{
+  width: 100px;
+  height: 100px;
   display:block;
   margin-left:auto;
   margin-right: auto;
   margin-bottom:50px;
   margin-top:50px;
+
+  border: 5px $grey-color-light;
+  border-style: outset;
 
   @include media-query($on-phone) {
     width: 100px;
