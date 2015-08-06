@@ -37,7 +37,7 @@ Electrical Cabinets               | Relay, Electro Magnetic
 Engine Doors                      | Springs
 Equipment stands                  | Vector Covers
 Fans, 48" Fans for Dynamic Brakes | VR14 Board
-{: .center-margin width="970px"}
+{: .center-margin .max-width}
 ---
 
 8004587—Resistor, battery charger | 8363168—Relay - 2 Pole, 10 A, Form C
@@ -58,4 +58,4 @@ Fans, 48" Fans for Dynamic Brakes | VR14 Board
 8347433—Relay-Fwd Trans. Aux. Relay | 9320130—Differential pressure—Turbocharged engines
 8357415—Relay, Gen. Purpose - Crl, Fpc, |  9505867—Differential pressure—Roots blown engines
 8357416—Relay - 6 Pole, 10 A (4 N.O. - 2 N.C.) |
-{: .center-margin width="970px"}
+{: .center-margin .max-width}

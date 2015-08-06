@@ -9,7 +9,7 @@ links:
   - Our Facilities
   - Our History
 ---
-RELCO Locomotives, Inc. is a long-established company in the locomotives leasing, rebuilding, and repairing industry.  For decades the name RELCO Locomotives has been synonymous with quality, value, and exceptional service. For over 50 years RELCO has provided total locomotive solutions to railroads, transit agencies, OEMs, industrial companies, and government agencies throughout North America. RELCO has assembled a team of internal and external professionals to provide a solid backbone of both engineering and operational expertise.
+RELCO Locomotives, Inc. is a long-established company in the locomotive leasing, rebuilding, and repairing industry.  For decades the name RELCO Locomotives has been synonymous with quality, value, and exceptional service. For over 50 years RELCO has provided total locomotive solutions to railroads, transit agencies, OEMs, industrial companies, and government agencies throughout North America. RELCO has assembled a team of internal and external professionals to provide a solid backbone of both engineering and operational expertise.
 
 Relco operates in a very competitive, international marketplace.  Nevertheless, we have committed ourselves to adhere to these values in all that we do:
 

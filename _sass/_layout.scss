@@ -78,3 +78,15 @@
     height: 100px;
   }
 }
+
+.max-width{
+  width: $content-width;
+
+  @include media-query($on-phone) {
+    width: $on-phone;
+  }
+
+  @include media-query($on-laptop) {
+    width: $on-laptop;
+  }
+}
