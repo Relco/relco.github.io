@@ -44,16 +44,16 @@
               <img u="image" src="/images/slideshow/{{page.picture}}" />
             </div>
 
-            {% assign content = page.content | strip_newlines %}
-            {% if content != "" %}
+            {% assign c = page.content | strip_newlines %}
+            {% if c != "" %}
 
               {% if page.transition %}
                 <div class = "caption" u="caption" t="{{page.transition}}">
-                  {{content}}
+                  {{c}}
                 </div>
               {% else %}
                 <div class = "caption" u="caption" t="MCLIP|T">
-                  {{content}}
+                  {{c}}
                 </div>
               {% endif %}
 
