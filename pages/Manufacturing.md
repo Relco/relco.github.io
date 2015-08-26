@@ -25,4 +25,4 @@ The steps we take to remanufacture a locomotive include:
 
  * Provide on-site commissioning and training of your personnel once the locomotive is shipped and delivered to you
 
- |![Image1](/images/image1079.jpg)  |  ![Image2](/images/image1088.jpg)|
+ |![Image1]({{site.baseurl}}/images/image1079.jpg)  |  ![Image2]({{site.baseurl}}/images/image1088.jpg)|

@@ -11,7 +11,7 @@
           <div class="slide" {% if page.slide-height %} style="height: {{page.slide-height}}px;" {% else %} style="height: 300px;" {% endif %}>
 
             <div>
-              <img u="image" src="/images/slideshow/{{item.picture}}" />
+              <img u="image" src="{{site.baseurl}}/images/slideshow/{{item.picture}}" />
             </div>
 
 
@@ -41,7 +41,7 @@
           <div class="slide" {% if page.slide-height %} style="height: {{page.slide-height}}px;" {% else %} style="height: 300px;" {% endif %}>
 
             <div>
-              <img u="image" src="/images/slideshow/{{page.picture}}" />
+              <img u="image" src="{{site.baseurl}}/images/slideshow/{{page.picture}}" />
             </div>
 
             {% assign c = page.content | strip_newlines %}

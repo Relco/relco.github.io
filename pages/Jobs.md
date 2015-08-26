@@ -34,7 +34,7 @@ Please Note:  Be sure that you specify the job title for which you are requestin
 
 |                              Name                              |  Description  |
 |:--------------------------------------------------------------:|:-------------:|
-| [Business Development / Sales Manager](/pdf/Sales_Manager.pdf) | Open Position |
+| [Business Development / Sales Manager]({{site.baseurl}}/pdf/Sales_Manager.pdf) | Open Position |
 {: .center-margin .border width="500px"}
 
 
@@ -44,14 +44,14 @@ Please Note:  Be sure that you specify the job title for which you are requestin
 
 |                              Name                              |  Description  |
 |:--------------------------------------------------------------:|:-------------:|
-| [Buyer](/pdf/Buyer.pdf) | Filled |
-| [HR Safety](/pdf/HR_Safety.pdf) | Open Position |
-| [Accounting Manager](/pdf/Accounting_Manager.pdf) | Open Position |
-| [Admin Assistant](/pdf/Administrative_Assistant.pdf) | Open Position |
-| [Staff Accountant](/pdf/Staff_Accountant.pdf) | Open Position |
-| [Network Admin](/pdf/Network_Admin.pdf) | Open Position |
-| [Paralegal](/pdf/Paralegal.pdf) | Open Position |
-| [Materials Manager](/pdf/Materials_Manager_Job.pdf) | Filled |
+| [Buyer]({{site.baseurl}}/pdf/Buyer.pdf) | Filled |
+| [HR Safety]({{site.baseurl}}/pdf/HR_Safety.pdf) | Open Position |
+| [Accounting Manager]({{site.baseurl}}/pdf/Accounting_Manager.pdf) | Open Position |
+| [Admin Assistant]({{site.baseurl}}/pdf/Administrative_Assistant.pdf) | Open Position |
+| [Staff Accountant]({{site.baseurl}}/pdf/Staff_Accountant.pdf) | Open Position |
+| [Network Admin]({{site.baseurl}}/pdf/Network_Admin.pdf) | Open Position |
+| [Paralegal]({{site.baseurl}}/pdf/Paralegal.pdf) | Open Position |
+| [Materials Manager]({{site.baseurl}}/pdf/Materials_Manager_Job.pdf) | Filled |
 {: .center-margin .border width="500px"}
 
 #Project Management & Engineering
@@ -59,8 +59,8 @@ Please Note:  Be sure that you specify the job title for which you are requestin
 
 |                              Name                              |  Description  |
 |:--------------------------------------------------------------:|:-------------:|
-| [Project Manager](/pdf/Project_Manager.pdf) | Open Position |
-| [Electronics Engineer](/pdf/Electronic_s_Engineer.pdf) | Open Position |
+| [Project Manager]({{site.baseurl}}/pdf/Project_Manager.pdf) | Open Position |
+| [Electronics Engineer]({{site.baseurl}}/pdf/Electronic_s_Engineer.pdf) | Open Position |
 {: .center-margin .border width="500px"}
 
 #Project Management & Engineering
@@ -68,11 +68,11 @@ Please Note:  Be sure that you specify the job title for which you are requestin
 
 |                              Name                              |  Description  |
 |:--------------------------------------------------------------:|:-------------:|
-| [Locomotive Electrician](/pdf/Locomotive_Electrician.pdf) | Open Position |
-| [Locomotive Mechanic](/pdf/Locomotive_Mechanic.pdf) | Open Position |
-| [Locomotive Technician Manager](/pdf/Locomotive_Technician_Manager.pdf) | Open Position |
-| [Locomotive Technician](/pdf/Locomotive_Technician.pdf) | Open Position |
-| [Warehouse Clerk](/pdf/Warehouse_Clerk.pdf) | Open Position |
-| [Warehouse Manager](/pdf/Warehouse_Manager.pdf) | Filled Position |
-| [Welder Fabricator](/pdf/Welder_-_Fabricator.pdf) | Open Position |
+| [Locomotive Electrician]({{site.baseurl}}/pdf/Locomotive_Electrician.pdf) | Open Position |
+| [Locomotive Mechanic]({{site.baseurl}}/pdf/Locomotive_Mechanic.pdf) | Open Position |
+| [Locomotive Technician Manager]({{site.baseurl}}/pdf/Locomotive_Technician_Manager.pdf) | Open Position |
+| [Locomotive Technician]({{site.baseurl}}/pdf/Locomotive_Technician.pdf) | Open Position |
+| [Warehouse Clerk]({{site.baseurl}}/pdf/Warehouse_Clerk.pdf) | Open Position |
+| [Warehouse Manager]({{site.baseurl}}/pdf/Warehouse_Manager.pdf) | Filled Position |
+| [Welder Fabricator]({{site.baseurl}}/pdf/Welder_-_Fabricator.pdf) | Open Position |
 {: .center-margin .border width="500px"}

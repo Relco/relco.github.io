@@ -117,11 +117,11 @@ Links are just as easy.
 
     [This is a link to a fluffy kitty](http://i.imgur.com/9JbJeG4.gifv)
 
-If you want to link to a page on the site, just use the ending after the "RelcoLocomotives.com"
+If you want to link to a page on the site, just use the ending after the "RelcoLocomotives.com" with the addition of {{site.baseurl}}, which tells the website to add on the relcolocomotives.com and anything else that may be at the end.
 
-[This is a link to this page.](/about/tutorial/)
+[This is a link to this page.]({{site.baseurl}}/about/tutorial/)
 
-    [This is a link to this page.](/about/tutorial/)
+    [This is a link to this page.]({{site.baseurl}}/about/tutorial/)
 
 <br>
 
