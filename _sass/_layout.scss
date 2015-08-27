@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
+    border-top: 10px solid $brand-color;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
@@ -16,6 +16,12 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+
+    font-size: 13px;
+
+    .wrapper{
+      padding: $spacing-unit 0 ;
+    }
 }
 
 .footer-heading {
@@ -59,6 +65,11 @@
 .post-link {
     display: block;
     font-size: 24px;
+}
+
+.top-wrapper{
+  border-bottom: 1px solid $grey-color-light;
+  padding: 0 $spacing-unit;
 }
 
 #logo{

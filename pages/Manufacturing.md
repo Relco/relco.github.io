@@ -6,6 +6,7 @@ permalink: /Manufacturing/
 
 links:
   - Wreck Repairs
+  - Specialty Locomotives
 ---
 ###Rebuilding locomotives for over 30 years
 

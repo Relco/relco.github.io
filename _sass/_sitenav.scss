@@ -59,8 +59,15 @@
     }
 
     @include not-media-query($on-palm) {
+
+      .menubar-wrapper{
+        font-size: 0;
+        text-align:center;
+      }
+
       .menubar{
-        float: left;
+        font-size: 16px;
+        display:inline-block;
         color: black;
         padding-left: $spacing-unit;
         padding-right: $spacing-unit;

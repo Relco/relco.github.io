@@ -1,6 +1,5 @@
 ---
 layout: page
-render: true
 title: Component Sales
 permalink: /component/
 ---

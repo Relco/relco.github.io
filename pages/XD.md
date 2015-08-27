@@ -1,5 +1,6 @@
 ---
 layout: page
+render: true
 title: XD Locomotive
 permalink: /XD/
 
