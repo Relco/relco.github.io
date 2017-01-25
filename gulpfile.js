@@ -5,6 +5,7 @@ var browserSync = require('browser-sync');
 var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var htmlmin = require('gulp-htmlmin');
+const ghPages = require('gulp-gh-pages');
 
 var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -22,6 +23,14 @@ gulp.task('html-build', ['jekyll-build'], function () {
 	return gulp.src('.tmp/**/*.html')
 		.pipe(htmlmin({collapseWhitespace: true}))
 		.pipe(gulp.dest('_site'));
+});
+
+// 'gulp deploy' -- pushes your dist folder to Github
+gulp.task('deploy', ['build'], function () {
+	return gulp.src('_site/**/*')
+    .pipe(ghPages({
+	branch: 'master'
+}));
 });
 
 /**
