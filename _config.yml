@@ -5,9 +5,9 @@ url: "relcolocomotives.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-source: ./src/
+source: ./
 destination: ./.tmp/
 
 env: production
 
-exclude: [/scripts/*-expanded.js]
+exclude: [/scripts/*-expanded.js, .gitignore, gulpfile.js, package.json, .tmp, _site, node_modules]

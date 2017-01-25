@@ -63,7 +63,7 @@ gulp.task('sass', function () {
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
         .pipe(gulp.dest('_site/css'))
         .pipe(browserSync.reload({stream: true}))
-        .pipe(gulp.dest('_site/css'));
+        .pipe(gulp.dest('css'));
 });
 
 /**
