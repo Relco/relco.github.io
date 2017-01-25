@@ -1,0 +1,28 @@
+<div class="col-sm">
+	<ul class="nav nav-tabs nav-justified">
+		{% if page.links %}
+		<li role="presentation" class="active">
+			<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+		</li>
+		{% endif %}
+
+		{% for item in page.links %}
+			{% assign found = false %}
+			{% for sitePage in site.pages %}
+				{% if sitePage.title and sitePage.title == item %}
+					{% assign found = true %}
+					<li role="presentation">
+						<a href="{{ sitePage.url | prepend: site.baseurl }}">{{ sitePage.title }}</a>
+					</li>
+				{% endif %}
+			{% endfor %}
+			{% if found == false %}
+			<!-- External Links/Links Not Found -->
+				{% assign link = item | split: '-' %}
+				<li role="presentation">
+					<a href="{{link[1] | prepend: site.baseurl}}">{{link[0]}}</a>
+				</li>
+			{% endif %}
+		{% endfor %}
+	</ul>
+</div>

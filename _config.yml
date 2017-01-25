@@ -1,0 +1,13 @@
+# Site settings
+title: Relco Locomotives
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "relcolocomotives.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+source: ./src/
+destination: ./.tmp/
+
+env: production
+
+exclude: [/scripts/*-expanded.js]

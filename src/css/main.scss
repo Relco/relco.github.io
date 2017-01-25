@@ -1,0 +1,55 @@
+@charset "utf-8";
+@import "_bootstrap";
+
+// Our variables
+$base-font-family: Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #185390;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    970px;
+
+$on-phone:         300px;
+$on-palm:          970px;
+$on-laptop:        800px;
+
+$slideshow-height: 500px;
+$slideshow-width: 900px;
+
+
+.bg-brand {
+  background-color: $brand-color;
+	color: white;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+#site-nav {
+  margin-bottom: 0;
+}
+
+#header-color-bar {
+	height: 10px;
+}
+
+#site-logo {
+	border: 5px #e8e8e8;
+  border-style: outset;
+}
+
+#site-carousel {
+	margin-bottom: 30px;
+}
