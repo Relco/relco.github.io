@@ -5940,15 +5940,18 @@ button.close {
 .carousel-inner img {
   margin: auto; }
 
-#site-nav {
-  margin-bottom: 0; }
-
 #header-color-bar {
   height: 10px; }
 
-#site-logo {
-  border: 5px #e8e8e8;
-  border-style: outset; }
-
 #site-carousel {
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  text-align: center;
+  margin: auto; }
+
+.navbar-toggle {
+  z-index: 3; }
