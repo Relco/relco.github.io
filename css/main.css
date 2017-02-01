@@ -5933,6 +5933,9 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+* {
+  font-family: Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 .bg-brand {
   background-color: #185390;
   color: white; }
@@ -5947,11 +5950,17 @@ button.close {
   margin-bottom: 20px; }
 
 .navbar-brand {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  text-align: center;
-  margin: auto; }
+  padding: 5px; }
 
+/*
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
 .navbar-toggle {
-  z-index: 3; }
+    z-index:3;
+}
+*/

@@ -27,6 +27,9 @@ $on-laptop:        800px;
 $slideshow-height: 500px;
 $slideshow-width: 900px;
 
+* {
+  font-family: $base-font-family;
+}
 
 .bg-brand {
   background-color: $brand-color;
@@ -46,6 +49,11 @@ $slideshow-width: 900px;
 }
 
 .navbar-brand {
+	padding: 5px;
+}
+
+/*
+.navbar-brand {
     position: absolute;
     left: 50%;
     top: 0;
@@ -55,3 +63,4 @@ $slideshow-width: 900px;
 .navbar-toggle {
     z-index:3;
 }
+*/
