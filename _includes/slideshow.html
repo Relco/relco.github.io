@@ -5,7 +5,7 @@
 			{% if page.slideshow %}
 				{% for item in page.slideshow %}
 				<div class="item {% if hasActive == false %} active {% assign hasActive = true %} {% endif %}">
-					<img src="{{site.baseurl}}/images/slideshow/{{item.picture}}">
+					<img src="{{site.baseurl}}/images/slideshow/{{item.picture}}" alt="...">
 				</div>
 				{% endfor %}
 
@@ -15,7 +15,7 @@
 				{% for page in site.pages %}
 					{% if page.layout == 'picture' and page.picture %}
 					<div class="item {% if hasActive == false %} active {% assign hasActive = true %} {% endif %}">
-						<img src="{{site.baseurl}}/images/slideshow/{{page.picture}}">
+						<img src="{{site.baseurl}}/images/slideshow/{{page.picture}}" alt="...">
 					</div>
 					{% endif %}
 				{% endfor %}

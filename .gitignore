@@ -1,6 +1,7 @@
 _site
 .tmp
 .sass-cache
+.publish
 
 ### OSX.gitignore
 .DS_Store
