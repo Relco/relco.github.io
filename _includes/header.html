@@ -17,8 +17,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         {% for site_page in site.pages %}
-					{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-  				{% if site_page.title and site_page.render and thecycle == 'odd' %}
+  				{% if site_page.title and site_page.render %}
           <li class="{% if site_page.title == page.title %} active {% endif %}" >
             <a href="{{ site_page.url | prepend: site.baseurl }}">{{ site_page.title }}</a>
           </li>
@@ -27,14 +26,6 @@
       </ul>
 
 			<ul class="nav navbar-nav navbar-right">
-        {% for site_page in site.pages %}
-					{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-  				{% if site_page.title and site_page.render and thecycle == 'odd' %}
-          <li class="{% if site_page.title == page.title %} active {% endif %}" >
-            <a href="{{ site_page.url | prepend: site.baseurl }}">{{ site_page.title }}</a>
-          </li>
-  				{% endif %}
-  			{% endfor %}
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 						Portal <span class="caret"></span>
