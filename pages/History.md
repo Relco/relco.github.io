@@ -2,6 +2,13 @@
 layout: page
 permalink: /history/
 title: Our History
+
+links:
+  - Quality Assurance
+  - Project Management
+  - Our Facilities
+  - Our History
+  - Contact Us-http://www.relcolocomotives.net/contactus.html
 ---
 RELCO Locomotives was founded in 1961 by George Bachman to lease quality locomotives to railroads and industrial companies throughout the Midwest.
 

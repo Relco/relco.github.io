@@ -1,17 +1,11 @@
 <div class="col-sm">
 	<ul class="nav nav-tabs nav-justified">
-		{% if page.links %}
-		<li role="presentation" class="active">
-			<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-		</li>
-		{% endif %}
-
 		{% for item in page.links %}
 			{% assign found = false %}
 			{% for sitePage in site.pages %}
 				{% if sitePage.title and sitePage.title == item %}
 					{% assign found = true %}
-					<li role="presentation">
+					<li role="presentation" {% if sitePage.title == page.title %} class="active" {% endif %}>
 						<a href="{{ sitePage.url | prepend: site.baseurl }}">{{ sitePage.title }}</a>
 					</li>
 				{% endif %}

@@ -2,9 +2,9 @@
 layout: page
 render: true
 title: Manufacturing
-permalink: /Manufacturing/
 
 links:
+  - Manufacturing
   - Wreck Repairs
   - Specialty Locomotives
   - Rebuilding

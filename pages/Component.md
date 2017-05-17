@@ -2,6 +2,13 @@
 layout: page
 title: Component Sales
 permalink: /component/
+
+links:
+    - Product and Services
+    - Locomotive Painting
+    - Upgrading Technology
+    - Engine Remanufacturing
+    - Component Sales
 ---
 When considering your component needs, RELCO offers the same commitment to high standards that we are known for throughout our business. Being a manufacturer of locomotives, we often can have the component you are looking for in our warehouse, from cores to RTO’s to rebuilt components. We remanufacture all locomotive components in-house, using the most current technologies in tooling and testing, in accordance with the strictest quality assurance standards.
 

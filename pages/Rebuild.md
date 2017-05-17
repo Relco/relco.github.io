@@ -3,6 +3,12 @@ layout: page
 render: false
 title: Rebuilding
 permalink: /Rebuild/
+
+links:
+  - Manufacturing
+  - Wreck Repairs
+  - Specialty Locomotives
+  - Rebuilding
 ---
 ### Rebuilding locomotives for over 30 years
 

@@ -4,6 +4,7 @@ render: true
 title: Product and Services
 permalink: /Services/
 links:
+    - Product and Services
     - Locomotive Painting
     - Upgrading Technology
     - Engine Remanufacturing
@@ -11,7 +12,7 @@ links:
 ---
 RELCO not only produces some of the best remanufactured locomotives in America, we also sell components and offer additional services to make your business run as efficiently as possible.
 
-Some of the products and services we offer:  
+Some of the products and services we offer:
 
 * [New Locomotive Manufacturing](/Manufacturing/)
 * [Locomotive painting](/Painting/)

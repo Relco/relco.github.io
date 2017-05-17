@@ -2,6 +2,13 @@
 layout: page
 title: Locomotive Painting
 permalink: /Painting/
+
+links:
+    - Product and Services
+    - Locomotive Painting
+    - Upgrading Technology
+    - Engine Remanufacturing
+    - Component Sales
 ---
 ### Rebuilding locomotives for over 30 years
 

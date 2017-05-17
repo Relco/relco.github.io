@@ -2,6 +2,13 @@
 layout: page
 title: Upgrading Technology
 permalink: /Upgrade/
+
+links:
+    - Product and Services
+    - Locomotive Painting
+    - Upgrading Technology
+    - Engine Remanufacturing
+    - Component Sales
 ---
 Updating the technology on your locomotive can help it, and your facility, operate more efficiently.
 
