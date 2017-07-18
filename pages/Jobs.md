@@ -24,7 +24,7 @@ Relco Locomotives
 Lisle IL,60532-0647
 United States
 
-Or, you may fax or email to: Fax - (630) 968-0671, Email - HR@RelcoLocomotives.net
+Or, you may fax or email to: Fax - 630-968-0670, Email - HR@RelcoLocomotives.net
 Please Note:  Be sure that you specify the job title for which you are requesting consideration.  Resumes without a specific job reference will be discarded.
 
 # [Job Applications located here.](http://www.relcolocomotives.net/jobopportunities.html)
