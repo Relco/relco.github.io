@@ -14,3 +14,5 @@ RELCO’s world class shop facility in Albia, Iowa USA enables it to simultaneou
 Our decades deep manufacturing experience enables us to be nimble, flexible and solution oriented.   We can build, rebuild or repair whatever each customer needs always using an “open architecture” approach that eschews proprietary components and services in favor of using what is industry standard.  This helps ensure that the whatever RELCO builds can be maintained for years to come with commonly available components and services, and that helps keep the cost of operations low.
 
 What can we build for you?
+
+ |![Image1]({{site.baseurl}}/images/image1079.jpg)  |  ![Image2]({{site.baseurl}}/images/image1088.jpg)|

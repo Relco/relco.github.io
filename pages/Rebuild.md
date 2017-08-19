@@ -27,5 +27,3 @@ The steps we take to remanufacture a locomotive include:
  * Test for a full rated horse power output, and check all systems
 
  * Provide on-site commissioning and training of your personnel once the locomotive is shipped and delivered to you
-
- |![Image1]({{site.baseurl}}/images/image1079.jpg)  |  ![Image2]({{site.baseurl}}/images/image1088.jpg)|
