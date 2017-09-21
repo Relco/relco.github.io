@@ -173,12 +173,4 @@ You then can add your image the same way you would link to it.
 
 Adding a picture to the default slideshow is easy as well!
 
-There are two steps to this. Add the picture you want to the "slideshow" directory in the "images" directory.
-
-Now, create a text file in the "slideshow" directory. This text file should look something like this:
-
-    ---
-    layout: picture
-    picture: slideshow.jpg
-    ---
-    Caption Here!
+Just add the slideshow picture in the "main" directory under "images/slideshow"

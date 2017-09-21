@@ -15,4 +15,12 @@ Our decades deep manufacturing experience enables us to be nimble, flexible and 
 
 What can we build for you?
 
- |![Image1]({{site.baseurl}}/images/image1079.jpg)  |  ![Image2]({{site.baseurl}}/images/image1088.jpg)|
+ <div class="row">
+   <div class="col-md-6">
+     <img src="{{site.baseurl}}/images/image1079.jpg" class="img-responsive">
+   </div>
+
+   <div class="col-md-6">
+     <img src="{{site.baseurl}}/images/image1088.jpg" class="img-responsive">
+   </div>
+ </div>
