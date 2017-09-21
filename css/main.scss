@@ -48,6 +48,10 @@ $slideshow-width: 900px;
 	margin-bottom: 20px;
 }
 
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
+
 .navbar-brand {
 	padding: 5px;
 }
