@@ -19,19 +19,22 @@
   },
   "homepage": "https://github.com/Relco/relco.github.io#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.6",
+    "browser-sync": "^2.18.13",
     "child_process": "^1.0.2",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
+    "gulp-autoprefixer": "^4.0.0",
     "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^3.0.0",
     "gulp-sass": "^3.1.0",
-    "xo": "^0.17.1"
+    "xo": "^0.18.2"
   },
   "xo": {
     "envs": [
       "browser",
       "jquery"
     ]
+  },
+  "dependencies": {
+    "node-sass": "^4.5.3"
   }
 }
