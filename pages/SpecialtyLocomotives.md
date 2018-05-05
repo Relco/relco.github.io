@@ -20,3 +20,21 @@ A Mother Slug Set is a conventional locomotive that sends its additional electri
 
 ### Maintenance of Way Machines
 RELCO Manufactures many types of maintenance of way machines. A rotary snow plow is one example, which has large blades on the front that rotate and throw snow as it moves along the rail. We build these and can apply upgraded electrical control systems, improved roller bearings, and adding ergonomic cab features for increased comfort.  With our extensive experience we know what it takes to make Rotary Snow Plows work reliably.
+
+<div class="row">
+  <div class="col-md-6">
+    <img src="{{site.baseurl}}/images/slideshow/Specialty/1.jpg" class="img-responsive">
+  </div>
+
+  <div class="col-md-6">
+    <img src="{{site.baseurl}}/images/slideshow/Specialty/2.jpg" class="img-responsive">
+  </div>
+</div>
+
+## Video
+
+<div class="embed-responsive embed-responsive-16by9">
+  <video controls poster="{{site.baseurl}}/images/video/cp_locomotive_cover.jpeg">
+    <source src="{{site.baseurl}}/images/video/cp_locomotive.mov" type="video/mp4">
+  </video>
+</div>
